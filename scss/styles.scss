@@ -1,0 +1,17 @@
+@charset "utf-8";
+@use "reset";
+@use "vars";
+@use "base";
+@use "utility";
+@use "component";
+@use "module";
+@use "header";
+@use "footer";
+
+// Page styles import
+@use "index";
+@use "news";
+@use "product";
+@use "custom-footer";
+
+

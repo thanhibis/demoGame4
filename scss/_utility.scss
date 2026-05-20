@@ -1,0 +1,72 @@
+@use "vars" as *;
+
+
+
+.pc{
+	@include mq(){
+		display: none !important;
+	}
+	&-tb{
+		@include mq(tb){
+			display: none !important;
+		}
+	}
+	&-lg{
+		@include mq(lg){
+			display: none !important;
+		}
+	}
+	&-sm{
+		@include mq(sm){
+			display: none !important;
+		}
+	}
+	&-xs{
+		@include mq(xs){
+			display: none !important;
+		}
+	}
+}
+.sp{
+	@include mq(md-min){
+		display: none !important;
+	}
+	&-tb{
+		@include mq(tb-min){
+			display: none !important;
+		}
+	}
+	&-lg{
+		@include mq(lg-min){
+			display: none !important;
+		}
+	}
+	&-sm{
+		@include mq(sm-min){
+			display: none !important;
+		}
+	}
+}
+
+
+
+// Hover style
+.u-fn-hover{
+	display: inline-block;
+	@include mq(md-min){
+		transition: all .2s;
+		&:hover{
+			opacity: .7;
+		}
+	}
+}
+
+.u-pull{
+	&--left{
+		margin-left: calc(((100vw - 100%) / 2) * -1)
+	}
+	&--right{
+		margin-right: calc(((100vw - 100%) / 2) * -1)
+	}
+}
+

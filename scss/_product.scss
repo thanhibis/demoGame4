@@ -1,0 +1,74 @@
+@use "vars" as *;
+
+.content-show{
+	&__product{
+		padding: vw(30) 0 0;
+		&-item{
+			position: relative;
+			padding: vw(40) 0 vw(60);
+			@include mq(){
+				padding: vwsp(40) 0 vwsp(60);
+			}
+			&:before{
+				content: "";
+				width: vw(460);
+				height: vw(5);
+				background: url("../img/bf-03.png")no-repeat;
+				background-size: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				@include mq(){
+					width: vwsp(460);
+					height: vwsp(5);
+				}
+			}
+		}
+		&-ttl{
+			display: block;
+			margin-bottom: vw(30);
+			@include mq(){
+				margin-bottom: vwsp(30);
+			}
+			span{
+				display: inline-block;
+				background: #b12624;
+				color: white;
+				border-radius: vw(4);
+				font-weight: bold;
+				padding: vw(5) vw(20);
+				position: relative;
+				@include mq(){
+					border-radius: vwsp(4);
+					padding: vwsp(5) vwsp(20);
+				}
+				&:before{
+					content: "";
+					position: absolute;
+					top: 2px;
+					left: 2px;
+					right: 2px;
+					bottom: 2px;
+					border: 1px solid #eae3c2;
+					border-radius: vw(4);
+				}
+			}
+		}
+		&-list{
+			@include flex(0,0,wrap);
+			margin-bottom: vw(20);
+			@include mq(){
+				margin: 0 -5px vwsp(30);
+			}
+			&-item{
+				width: vw(123);
+				margin: 0 vw(25) vw(25) 0;
+				@include mq(){
+					width: 20%;
+					padding: 0 5px;
+					margin: 0;
+				}
+			}
+		}
+	}
+}

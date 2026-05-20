@@ -1,0 +1,107 @@
+@use "vars" as *;
+
+
+.c-fc{ //font-color
+	&--white{
+		color: white !important;
+	}
+	&--black{
+		color: black !important;
+	}
+	&--red{
+		color: #d03712 !important;
+	}
+	&--yellow{
+		color: #ffe180 !important;
+	}
+	&--green{
+		color: #2eff50 !important;
+	}
+}
+
+
+
+
+.c-al{
+	&--c{
+		text-align: center !important;
+	}
+	
+	&--r{
+		text-align: right !important
+	}
+	
+	&--l{
+		text-align: left !important;
+	}
+}
+
+
+
+
+
+
+
+
+/* ====================================================
+Component
+==================================================== */
+// Common Text style
+.c-txt{
+	&__basic{
+
+	}
+}
+
+
+
+
+//ttl
+.c-ttl{
+	&__01{
+
+	}
+}
+
+.c-btn{
+	&__back{
+		display: inline-block;
+		position: relative;
+		width: vw(137);
+		@include mq(){
+			width: vwsp(137);
+		}
+	}
+	&__img{
+		position: relative;
+		.img-01{
+
+		}
+		.img-02{
+			opacity: 0;
+			visibility: hidden;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		img{
+			width: 100%;
+			@include smooth-transition;
+		}
+		&:hover,&.active{
+			opacity: 1;
+			.img-01{
+				opacity: 0;
+				visibility: hidden;
+			}
+			.img-02{
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+}
+
+
+
+

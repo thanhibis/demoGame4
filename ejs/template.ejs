@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title><%= pageData.title %></title>
+	<meta name="description" content="<%= pageData.description %>">
+	<meta name="keywords" content="<%= pageData.keyword %>">
+	<meta name="format-detection" content="telephone=no">
+	<!--	<link rel="shortcut icon" href="<%= RELATIVE_PATH %>favicon.ico" >-->
+	
+	<link type="text/css" rel="stylesheet" href="<%= RELATIVE_PATH %>js/slick/slick-theme.css">
+	<link type="text/css" rel="stylesheet" href="<%= RELATIVE_PATH %>js/slick/slick.css">
+	<link type="text/css" rel="stylesheet" href="<%= RELATIVE_PATH %>css/styles.css">
+</head>
+<body>
+
+	<%- include('common/_header'); %>
+	<main class="wrapper">
+		<%- include(pageData.template, {datalabel:'data'}) %>
+	</main>
+	<%- include('common/_footer'); %>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="<%= RELATIVE_PATH %>js/slick/slick.min.js"></script>
+	<script src="<%= RELATIVE_PATH %>js/jquery.slimscroll.min.js"></script>
+	<script src="<%= RELATIVE_PATH %>js/setting.js"></script>
+</body>
+</html>
