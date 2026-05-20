@@ -315,7 +315,7 @@
 		&-block{
 			width: vw(117);
 			position: absolute;
-			top: vw(-25);
+			top: vw(4);
 			left: 0;
 			right: 0;
 			margin: 0 auto;
@@ -323,7 +323,7 @@
 		&-logo{
 			display: block;
 			width: vw(122);
-			margin: 0 auto;
+			margin: 0 auto vw(8);
 		}
 		&-nav{
 			margin-bottom: vw(8);

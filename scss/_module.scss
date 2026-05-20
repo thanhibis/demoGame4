@@ -22,9 +22,9 @@
 
 .js-bar,.slimScrollDiv{
 	height: vw(500) !important;
-	@include mq(tb){
-		height: 60vh !important;
-	}
+	//@include mq(tb){
+	//	height: 60vh !important;
+	//}
 	@include mq(){
 
 		margin: 0 -15px 0 0;
