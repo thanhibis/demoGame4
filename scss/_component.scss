@@ -102,6 +102,33 @@ Component
 	}
 }
 
+.btn-img{
+	position: relative;
+	.img-01{
 
+	}
+	.img-02{
+		opacity: 0;
+		visibility: hidden;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	img{
+		width: 100%;
+		@include smooth-transition;
+	}
+	&:hover,&.active{
+		opacity: 1;
+		.img-01{
+			opacity: 0;
+			visibility: hidden;
+		}
+		.img-02{
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+}
 
 
