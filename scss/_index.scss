@@ -22,6 +22,7 @@
 		margin: 0 auto;
 		@include mq(){
 			width: vwsp(606);
+			margin-bottom: vwsp(215);
 		}
 	}
 	&__play{
@@ -112,8 +113,13 @@
 	z-index: 1;
 	@include mq(){
 		padding: 0 0 vwsp(200);
-		.heading-block{
-			margin-bottom: vw(30);
+
+	}
+	.heading-block{
+		max-width: vw(409);
+		@include mq(){
+			max-width: vwsp(409);
+			margin-bottom: vwsp(30);
 		}
 	}
 	&:before{
@@ -210,6 +216,7 @@
 				@include v-align;
 				right: 0;
 				padding: 0;
+				width: vw(47);
 				&:before,&:after{
 					display: none;
 				}
